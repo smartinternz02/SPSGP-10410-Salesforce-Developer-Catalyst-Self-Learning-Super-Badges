@@ -1,0 +1,7 @@
+public class NewCaseListController {
+    public List<case> getNewCases(){
+        List<Case> filterList=[Select Id, caseNumber from case where status='new'];
+        return filterList;
+    }
+
+}
